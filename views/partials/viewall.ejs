@@ -1,0 +1,22 @@
+
+
+<div id="tabl" ng-controller="ViewCAllCtrl" >
+<table>
+<tr><th>First Name</th><th>Last Name</th><th> Department</th> <th>Phone</th> <th>Details</th> <th>Edit</th> <th>Delete</th></tr>
+<tr ng-repeat="one in list">
+<td>{{one.firstname}}</td>
+<td>{{one.lastname}}</td>
+<td>{{one.department}}</td>
+<td>{{one.phone}}</td>
+<td><a href="/#!/student/details/{{one._id}}">Details</a></td>
+<td><a href="/#!/student/edit/{{one._id}}">Edit</a></td>
+<td><a href="/#!/student/delete/{{one._id}}">Delete</a></td>
+<tr>
+
+</table>			
+</div>
+		
+		
+	 
+	 
+	 
